@@ -6,4 +6,4 @@ Integrative Programming Project
 
 ## Screenshots:
 <p> Screenshot during coding the corba_app </p>
- [![See this](https://github.com/raldzyber/JavaCORBA_Squared-SquareRootApp/blob/main/corba_screenshot.png)
+ ![See this](https://raw.githubusercontent.com/raldzyber/JavaCORBA_Squared-SquareRootApp/main/corba_screenshot.png)
