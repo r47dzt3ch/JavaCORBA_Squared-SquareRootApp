@@ -2,7 +2,7 @@
 Integrative Programming Project
  ## Video:
 <p> This Video is the Steps process  On how to create CORBA Application </p>
-[![Watch the video] (https://github.com/raldzyber/JavaCORBA_Squared-SquareRootApp/blob/main/2021-04-10%2020-51-58.mkv)
+![Watch the video](https://youtu.be/jFtiAhBOdgI)
 
 <video autoplay loop muted inline>
   <source src="https://www.youtube.com/watch?v=jFtiAhBOdgI" type="video/mkv">
