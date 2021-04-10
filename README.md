@@ -1,4 +1,4 @@
-# JavaCORBA_Squared-SquareRootApp
+# Java_Squared-SquareRootApp
 Integrative Programming Project
  ## Video:
 <p> This Video is the Steps process  On how to create CORBA Application </p>
@@ -6,4 +6,4 @@ Integrative Programming Project
 
 ## Screenshots:
 <p> Screenshot during coding the corba_app </p>
- ![See this](corba_screenshot.png)
+ ![See this](/corba_screenshot.png)
