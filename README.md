@@ -1,5 +1,6 @@
 # Java_Squared-SquareRootApp
 Integrative Programming Project
+*By Jerald Jose*
  ## Video:
 <p> This Video is the Steps process  On how to create CORBA Application </p>
 
