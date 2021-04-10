@@ -5,9 +5,7 @@ Integrative Programming Project
 [![Watch the video] (https://github.com/raldzyber/JavaCORBA_Squared-SquareRootApp/blob/main/2021-04-10%2020-51-58.mkv)
 
 <video autoplay loop muted inline>
-  <source src="https://github.com/raldzyber/JavaCORBA_Squared-SquareRootApp/blob/5a14edb96345ea2583c9e45b93d460ef68bcd416/2021-04-10%2020-51-58.mkv" type="video/mkv">
-
-  <img src="2021-04-10 20-51-58.mkv" />
+  <source src="https://www.youtube.com/watch?v=jFtiAhBOdgI" type="video/mkv">
 </video>
 
 ## Screenshots:
