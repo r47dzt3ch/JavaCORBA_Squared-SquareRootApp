@@ -1,0 +1,8 @@
+module SquaredApp
+{
+  interface Squared
+  {
+  string getSquare(in double input);
+  string getSquareRoot(in double input);
+  };
+ };
