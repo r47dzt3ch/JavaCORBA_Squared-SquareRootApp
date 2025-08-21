@@ -1,250 +1,131 @@
-# Java_Squared-SquareRootApp
-Integrative Programming Project
-*By Jerald Jose*
- ## Video:
-<p> This Video is the Steps process  On how to create CORBA Application </p>
+# JavaCORBA_Squared-SquareRootApp 
+
+[![GitHub license](https://img.shields.io/github/license/r47dzt3ch/JavaCORBA_Squared-SquareRootApp?style=for-the-badge)](https://github.com/r47dzt3ch/JavaCORBA_Squared-SquareRootApp/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/r47dzt3ch/JavaCORBA_Squared-SquareRootApp?style=for-the-badge)](https://github.com/r47dzt3ch/JavaCORBA_Squared-SquareRootApp)
+[![GitHub forks](https://img.shields.io/github/forks/r47dzt3ch/JavaCORBA_Squared-SquareRootApp?style=for-the-badge)](https://github.com/r47dzt3ch/JavaCORBA_Squared-SquareRootApp)
+[![GitHub issues](https://img.shields.io/github/issues/r47dzt3ch/JavaCORBA_Squared-SquareRootApp?style=for-the-badge)](https://github.com/r47dzt3ch/JavaCORBA_Squared-SquareRootApp)
+
+**Integrative Programming Project by Jerald Jose**
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/jeraldjose/"><img src="https://res.cloudinary.com/dbkpjazoq/image/upload/v1688144593/social-media-icon/linkedin_wvfje7.png" width="30" height="30" width="30" height="30" width="30" height="30" alt="LinkedIn" width="30" height="30"></a>
+  <a href="https://wa.me/qr/SP5SZZGGVJ3SE1"><img src="https://res.cloudinary.com/dbkpjazoq/image/upload/v1688144593/social-media-icon/whatsapp_waie0a.png" width="30" height="30" width="30" height="30" width="30" height="30" alt="WhatsApp" width="30" height="30"></a>
+  <a href="https://web.facebook.com/jerald.jose.316"><img src="https://res.cloudinary.com/dbkpjazoq/image/upload/v1688144594/social-media-icon/facebook_laopcg.png" width="30" height="30" width="30" height="30" width="30" height="30" alt="Facebook" width="30" height="30"></a>
+  <a href="mailto:jeraldjose16@gmail.com"><img src="https://res.cloudinary.com/dbkpjazoq/image/upload/v1688146129/social-media-icon/gmail_euusko.png" width="30" height="30" width="30" height="30" width="30" height="30" alt="Gmail" width="30" height="30"></a>
+  <a href="https://jeraldjose.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-jeraldjose.netlify.app-blue?style=for-the-badge&logo=netlify" width="30" height="30" width="30" height="30" alt="Portfolio" width="150"></a>
+</p>
+
+---
+
+<img src="https://github.com/raldzyber/JavaCORBA_Squared-SquareRootApp/blob/main/corba.png" alt="Project Video" width="400">
+
+<details>
+  <summary>Video: How to Create a CORBA Application</summary>
+  <a href="https://youtu.be/jFtiAhBOdgI">Watch the video here</a>
+</details>
+
+---
+
+## ✨ Features
+
+- [x]  Calculates the square of a number using CORBA.
+- [x]  Calculates the square root of a number using CORBA.
+- [x]  Client-server architecture implemented with CORBA.
+- [x]  Robust error handling for invalid inputs.
 
 
-[![Watch the video](https://github.com/raldzyber/JavaCORBA_Squared-SquareRootApp/blob/main/corba.png)](https://youtu.be/jFtiAhBOdgI)
+## 🚀 Quick Start
+
+This project requires a Java Development Kit (JDK) and a CORBA implementation (like JacORB).  Ensure these are installed and configured correctly before proceeding.
+
+1. Clone the repository: `git clone https://github.com/r47dzt3ch/JavaCORBA_Squared-SquareRootApp.git`
+2. Compile and run the server: `javac SquaredServer.java && java SquaredServer`
+3. Compile and run the client: `javac SquaredClient.java && java SquaredClient`
+
+## 📦 Installation
+
+1. **Clone the repository:** Use Git to clone the project to your local machine.
+   ```bash
+   git clone https://github.com/r47dzt3ch/JavaCORBA_Squared-SquareRootApp.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd JavaCORBA_Squared-SquareRootApp
+   ```
+3. **Compile:** Compile the Java code using a JDK compiler (javac).
+   ```bash
+   javac *.java
+   ```
 
 
+## 🛠️ Usage
 
-## Screenshots:
+The application provides a menu-driven interface:
 
-<p> Screenshot during coding of the corba_app </p>
-<img src="https://github.com/raldzyber/JavaCORBA_Squared-SquareRootApp/blob/main/corba_screenshot.png">
+1.  **Choose an operation:** Select either "Get Square of a number" or "Get Square root of a number".
+2.  **Enter a number:** Input a non-negative number.
+3.  **View the result:** The application will display the calculated square or square root.
 
-## code
- <p> The java code uses for this project: </p>
- 
- 
-   ###### corba_app.java 
-   ```java
- 
- 
- 
-  
-import java.util.InputMismatchException;
-import java.util.Scanner;
+**Example (Client):**
 
-public class corba_app {
-	public static  Scanner sc = null;
-	public static void main(String[] Args ) {
-		sc = new Scanner(System.in);
-		System.out.println("**************************************");
-		System.out.println("*   SQUARE & SQUARE ROOT CORBA       *");
-		System.out.println("**************************************");		
-		System.out.println();
-		System.out.println("What do you want to do today");
-		System.out.println("1 - Get Square of a number");
-		System.out.println("2 - Get Square root of a number");
-		int choice = getChoice();
-		if (choice == 1) {//print Square
-			System.out.print(getSquare(getInput()));
-		
-		}else {//Get Square root
-			System.out.print(getSquareRoot(getInput()));
-		}		
-	}
-
-	public static String getSquare(double input) {
-		return "Result: The Square of " + input + " is " + (input*input);
-	}
-	public static String getSquareRoot(double input) {
-		return "Result: The SquareRoot of " + input + " is " + (Math.sqrt(input));
-	}
-	public static int getChoice() {
-		try {
-			System.out.println("Enter Choice: ");
-			int input = sc.nextInt();
-			if( input < 1 || input > 2 )throw new InputMismatchException(); 
-			return input;
-		}catch(InputMismatchException IME) {
-			System.err.println("Error: Please input a number from 1 to 2");
-			return getChoice();
-		}
-	}	
-	public static double getInput() { 
-		try {
-			System.out.print("Enter Number: ");
-			double inputs = sc.nextDouble();
-			if (inputs < 0 ) throw new Exception();
-			return inputs;
-		} catch (Exception e) {
-			System.err.println("Type a valid number");
-			
-		}
-		return getInput();
-
-	}
-		
-		
-	
-}
+```java
+// ... (SquaredClient code execution) ...
+What do you want to do today
+1 - Get Square of a number
+2 - Get Square root of a number
+Enter Choice: 1
+Enter Number: 5
+Result: The Square of 5.0 is 25.0
 ```
 
-###### SquaredServer.java
-```java
+## ⚙️ Configuration
+
+- **JDK:**  Ensure you have a Java Development Kit (JDK) installed.  The project was developed with a JDK 8, but newer JDKs should also work.
+- **CORBA Implementation:** You'll need a CORBA implementation (e.g., JacORB). Download and install it according to the provider's instructions.  Set necessary environment variables if needed.
 
 
+## 🏗️ Project Structure
 
-
-import org.omg.CosNaming.*;
-import org.omg.CosNaming.NamingContextPackage.*;
-import org.omg.CORBA.*;
-import org.omg.PortableServer.*;
-import org.omg.PortableServer.POA;
-import SquaredApp.Squared;
-import SquaredApp.SquaredHelper;
-import java.util.*;
-public class SquaredServer {
-
-	public static void main(String[] args) {
-		try {
-			//Create and initialize the orb
-			ORB orb = ORB.init(args, null);
-			POA rootpoa = POAHelper.narrow(orb.resolve_initial_references("RootPOA"));
-			rootpoa.the_POAManager().activate();
-			//Create and initialize the orb
-			SquaredServant servant = new SquaredServant();
-			servant.setOrb(orb);
-			//get object reference
-			org.omg.CORBA.Object ref =rootpoa.servant_to_reference(servant);
-			Squared href = SquaredHelper.narrow(ref);
-			
-			org.omg.CORBA.Object objRef = orb.resolve_initial_references("NameService");
-			NamingContextExt ncRef = (NamingContextExt) NamingContextHelper.narrow(objRef);
-			
-			NameComponent path[] = ncRef.to_name("ABC");
-			ncRef.rebind(path, href);
-			
-			System.out.println("Squared`s App Server ready and waiting...");
-			
-			//wait for invocation from clients
-			for(;;) {
-				orb.run();
-			}
-			
-		} catch (Exception e) {
-			System.err.println("ERROR: "+e);
-			e.printStackTrace(System.out);
-		}
-		System.out.println("SquaredApp is Exiting....");
-	}
-
-}
 ```
-###### SquaredClient.java
-```java
-
-
-
-
-import org.omg.CosNaming.*;
-import SquaredApp.Squared;
-import SquaredApp.SquaredHelper;
-import org.omg.CORBA.*;
-import java.util.*;
-public class SquaredClient {
-	public static Scanner sc = null;
-	public static void main(String[] args) {
-
-		try {
-			ORB orb = ORB.init(args, null);
-			org.omg.CORBA.Object objRef = orb.resolve_initial_references("NameService");
-			NamingContextExt ncRef = (NamingContextExt) NamingContextHelper.narrow(objRef);
-			Squared squaredObj = (Squared) SquaredHelper.narrow(ncRef.resolve_str("ABC"));
-			
-			//Actual coding for client
-			sc = new Scanner(System.in); 
-			for(;;) {
-				sc = new Scanner(System.in);
-				System.out.println("**************************************");
-				System.out.println("*   SQUARE & SQUARE ROOT CORBA       *");
-				System.out.println("**************************************");		
-				System.out.println();
-				System.out.println("What do you want to do today");
-				System.out.println("1 - Get Square of a number");
-				System.out.println("2 - Get Square root of a number");
-				int choice = getChoice();
-				if (choice == 1) {//print Square
-					System.out.print(squaredObj.getSquare(getInput()));
-				
-				}else {//Get Square root
-					System.out.print(squaredObj.getSquareRoot(getInput()));
-				}		
-			}
-		} catch (Exception e) {
-			System.err.println("Squared Client Exceptio: "+e);
-			e.printStackTrace(System.out);
-		}
-
-	}
-	public static int getChoice() {
-		try {
-			System.out.println("Enter Choice: ");
-			int input = sc.nextInt();
-			if( input < 1 || input > 2 )throw new InputMismatchException(); 
-			return input;
-		}catch(InputMismatchException IME) {
-			System.err.println("Error: Please input a number from 1 to 2");
-			return getChoice();
-		}
-	}	
-	public static double getInput() { 
-		try {
-			System.out.print("Enter Number: ");
-			double inputs = sc.nextDouble();
-			if (inputs < 0 ) throw new Exception();
-			return inputs;
-		} catch (Exception e) {
-			System.err.println("Type a valid number");
-			
-		}
-		return getInput();
-
-	}
-
-}
+JavaCORBA_Squared-SquareRootApp/
+├── SquaredApp/          // IDL files
+│   └── Squared.idl
+├── SquaredClient.java   // Client-side code
+├── SquaredServer.java   // Server-side code
+├── SquaredServant.java  // Server-side servant
+├── corba_app.java      // (Example only - not directly part of CORBA implementation)
+├── corba_screenshot.png // Screenshot
+└── corba.png            // Video thumbnail
 ```
-###### SquaredServant
-```java
 
 
+## 🧪 Testing
 
-import SquaredApp.*;
-import org.omg.CORBA.*;
-public class SquaredServant extends SquaredPOA {
-	private ORB orb;
-	public void setOrb(ORB orb_val) {
-		orb = orb_val;
-	}
-	@Override
-	public String getSquare(double input) {
-		return "Result: The Square of " + input + " is " + (input*input);
-	}
-
-	@Override
-	public String getSquareRoot(double input) {
-		return "Result: The SquareRoot of " + input + " is " + (Math.sqrt(input));
-	}
-	
-	
-}
-````
-###### Squared.idl
-```txt
+Testing was primarily done through manual execution and verification of the results.  For a more robust testing approach, consider using a unit testing framework like JUnit.
 
 
-module SquaredApp
-{
-  interface Squared
-  {
-  string getSquare(in double input);
-  string getSquareRoot(in double input);
-  };
- };
- ```
-### Credits ###
- *Sir, Pilapel
- ## Done ##
+## 🚀 Deployment
+
+1.  **Compile:** Compile all Java files.
+2.  **Run the server:** Execute the `SquaredServer` class.  This will start the CORBA server, making it available to clients.
+3.  **Run the client:** Execute the `SquaredClient` class.  This will connect to the server and allow you to perform calculations.
+
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+
+## 📄 License
+
+This project is licensed under the Eclipse Public License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+
+## 👨‍💻 Author
+
+**Jerald Jose**
+
+[jeraldjose.netlify.app](https://jeraldjose.netlify.app/)
+
+<img src="https://github.com/raldzyber/JavaCORBA_Squared-SquareRootApp/blob/main/corba_screenshot.png" alt="Screenshot" width="600">
+
